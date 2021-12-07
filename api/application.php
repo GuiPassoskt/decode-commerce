@@ -1,5 +1,8 @@
 <?php
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+
 if (isset($_POST['client_id'])) {
     $client = $_POST['client_id'];
 } else {
